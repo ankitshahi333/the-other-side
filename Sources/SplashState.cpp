@@ -1,6 +1,6 @@
-#include "../include/SplashState.hpp"
-#include "../include/MainMenuState.hpp"
-#include "../include/DEFINITION.hpp"
+#include "../Headers/SplashState.hpp"
+#include "../Headers/MainMenuState.hpp"
+#include "../Headers/DEFINITION.hpp"
 
 #include <iostream>
 #include <sstream>

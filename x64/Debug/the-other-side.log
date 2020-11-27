@@ -1,0 +1,7 @@
+﻿  Game.cpp
+  GameState.cpp
+  MainMenuState.cpp
+  SplashState.cpp
+  main.cpp
+  Generating Code...
+  the-other-side.vcxproj -> E:\Visual Studio Projects\the-other-side\x64\Debug\the-other-side.exe

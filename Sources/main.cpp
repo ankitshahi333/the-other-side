@@ -1,7 +1,7 @@
 #include <iostream>
 
-#include "../include/Game.hpp"
-#include "../include/DEFINITION.hpp"
+#include "../Headers/Game.hpp"
+#include "../Headers/DEFINITION.hpp"
 
 int main()
 {

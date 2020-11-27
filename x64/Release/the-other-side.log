@@ -1,0 +1,158 @@
+﻿  AssetManager.cpp
+  Game.cpp
+  GameState.cpp
+  InputManager.cpp
+E:\Visual Studio Projects\the-other-side\Sources\InputManager.cpp(5,135): warning C4244: 'argument': conversion from 'T' to 'T', possible loss of data
+          with
+          [
+              T=float
+          ]
+          and
+          [
+              T=int
+          ]
+E:\Visual Studio Projects\the-other-side\Sources\InputManager.cpp(5,103): warning C4244: 'argument': conversion from 'T' to 'T', possible loss of data
+          with
+          [
+              T=float
+          ]
+          and
+          [
+              T=int
+          ]
+E:\Visual Studio Projects\the-other-side\Sources\InputManager.cpp(5,75): warning C4244: 'argument': conversion from 'const T' to 'T', possible loss of data
+          with
+          [
+              T=float
+          ]
+          and
+          [
+              T=int
+          ]
+E:\Visual Studio Projects\the-other-side\Sources\InputManager.cpp(5,51): warning C4244: 'argument': conversion from 'const T' to 'T', possible loss of data
+          with
+          [
+              T=float
+          ]
+          and
+          [
+              T=int
+          ]
+E:\Visual Studio Projects\the-other-side\Sources\InputManager.cpp(14,131): warning C4244: 'argument': conversion from 'T' to 'T', possible loss of data
+          with
+          [
+              T=float
+          ]
+          and
+          [
+              T=int
+          ]
+E:\Visual Studio Projects\the-other-side\Sources\InputManager.cpp(14,99): warning C4244: 'argument': conversion from 'T' to 'T', possible loss of data
+          with
+          [
+              T=float
+          ]
+          and
+          [
+              T=int
+          ]
+E:\Visual Studio Projects\the-other-side\Sources\InputManager.cpp(14,71): warning C4244: 'argument': conversion from 'const T' to 'T', possible loss of data
+          with
+          [
+              T=float
+          ]
+          and
+          [
+              T=int
+          ]
+E:\Visual Studio Projects\the-other-side\Sources\InputManager.cpp(14,47): warning C4244: 'argument': conversion from 'const T' to 'T', possible loss of data
+          with
+          [
+              T=float
+          ]
+          and
+          [
+              T=int
+          ]
+E:\Visual Studio Projects\the-other-side\Sources\InputManager.cpp(29,95): warning C4244: 'argument': conversion from 'T' to 'T', possible loss of data
+          with
+          [
+              T=float
+          ]
+          and
+          [
+              T=int
+          ]
+E:\Visual Studio Projects\the-other-side\Sources\InputManager.cpp(29,87): warning C4244: 'argument': conversion from 'T' to 'T', possible loss of data
+          with
+          [
+              T=float
+          ]
+          and
+          [
+              T=int
+          ]
+E:\Visual Studio Projects\the-other-side\Sources\InputManager.cpp(29,68): warning C4244: 'argument': conversion from 'T' to 'T', possible loss of data
+          with
+          [
+              T=float
+          ]
+          and
+          [
+              T=int
+          ]
+E:\Visual Studio Projects\the-other-side\Sources\InputManager.cpp(29,42): warning C4244: 'argument': conversion from 'T' to 'T', possible loss of data
+          with
+          [
+              T=float
+          ]
+          and
+          [
+              T=int
+          ]
+E:\Visual Studio Projects\the-other-side\Sources\InputManager.cpp(40,91): warning C4244: 'argument': conversion from 'T' to 'T', possible loss of data
+          with
+          [
+              T=float
+          ]
+          and
+          [
+              T=int
+          ]
+E:\Visual Studio Projects\the-other-side\Sources\InputManager.cpp(40,83): warning C4244: 'argument': conversion from 'T' to 'T', possible loss of data
+          with
+          [
+              T=float
+          ]
+          and
+          [
+              T=int
+          ]
+E:\Visual Studio Projects\the-other-side\Sources\InputManager.cpp(40,64): warning C4244: 'argument': conversion from 'T' to 'T', possible loss of data
+          with
+          [
+              T=float
+          ]
+          and
+          [
+              T=int
+          ]
+E:\Visual Studio Projects\the-other-side\Sources\InputManager.cpp(40,38): warning C4244: 'argument': conversion from 'T' to 'T', possible loss of data
+          with
+          [
+              T=float
+          ]
+          and
+          [
+              T=int
+          ]
+  main.cpp
+  MainMenuState.cpp
+  SplashState.cpp
+  StateMachine.cpp
+E:\Visual Studio Projects\the-other-side\Sources\StateMachine.cpp(23,26): warning C4834: discarding return value of function with 'nodiscard' attribute
+  Generating code
+  Previous IPDB not found, fall back to full compilation.
+  All 406 functions were compiled because no usable IPDB/IOBJ from previous compilation was found.
+  Finished generating code
+  the-other-side.vcxproj -> E:\Visual Studio Projects\the-other-side\x64\Release\the-other-side.exe

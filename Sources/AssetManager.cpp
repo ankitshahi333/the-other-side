@@ -1,4 +1,4 @@
-#include "../include/AssetManager.hpp"
+#include "../Headers/AssetManager.hpp"
 
 void AssetManager::LoadTexture( std::string name, std::string filename ){
     sf::Texture tex;

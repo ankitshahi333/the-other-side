@@ -1,7 +1,7 @@
-#include "../include/MainMenuState.hpp"
-#include "../include/DEFINITION.hpp"
-#include "../include/InputManager.hpp"
-#include "../include/GameState.hpp"
+#include "../Headers/MainMenuState.hpp"
+#include "../Headers/DEFINITION.hpp"
+#include "../Headers/InputManager.hpp"
+#include "../Headers/GameState.hpp"
 
 #include <iostream>
 #include <sstream>

@@ -1,7 +1,7 @@
 #include <stdlib.h>
 
-#include "../include/Game.hpp"
-#include "../include/SplashState.hpp"
+#include "../Headers/Game.hpp"
+#include "../Headers/SplashState.hpp"
 
 
 Game::Game(int width, int height, std::string title){

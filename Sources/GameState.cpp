@@ -1,5 +1,5 @@
-#include "../include/GameState.hpp"
-#include "../include/DEFINITION.hpp"
+#include "../Headers/GameState.hpp"
+#include "../Headers/DEFINITION.hpp"
 
 #include <iostream>
 #include <sstream>

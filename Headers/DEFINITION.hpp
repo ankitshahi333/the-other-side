@@ -11,15 +11,15 @@
 
 //Splash State Properties
 #define SPLASH_STATE_DURATION 3.0f
-#define SPLASH_STATE_BACKGROUND_FILEPATH "../resources/res/SplashBackground.png"
+#define SPLASH_STATE_BACKGROUND_FILEPATH "Assets/Graphics/SplashBackground.png"
 
 //Main Menu State Properties
-#define MAIN_MENU_BACKGROUND_FILEPATH "../resources/res/Background.png"
-#define MAIN_MENU_TITLE_FILEPATH "../resources/res/Title.png"
-#define PLAY_BUTTON_FILEPATH "../resources/res/PlayButton.png"
-#define PLAY_BUTTON_HOVER_FILEPATH "../resources/res/PlayButtonHover.png"
-#define QUIT_BUTTON_FILEPATH "../resources/res/QuitButton.png"
-#define QUIT_BUTTON_HOVER_FILEPATH "../resources/res/QuitButtonHover.png"
+#define MAIN_MENU_BACKGROUND_FILEPATH "Assets/Graphics/Background.png"
+#define MAIN_MENU_TITLE_FILEPATH "Assets/Graphics/Title.png"
+#define PLAY_BUTTON_FILEPATH "Assets/Graphics/PlayButton.png"
+#define PLAY_BUTTON_HOVER_FILEPATH "Assets/Graphics/PlayButtonHover.png"
+#define QUIT_BUTTON_FILEPATH "Assets/Graphics/QuitButton.png"
+#define QUIT_BUTTON_HOVER_FILEPATH "Assets/Graphics/QuitButtonHover.png"
 
 //Font properties
-#define FONT_FILEPATH "../resources/fonts/MarkerFelt.ttf"
+#define FONT_FILEPATH "Assets/Fonts/MarkerFelt.ttf"
