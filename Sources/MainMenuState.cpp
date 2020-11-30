@@ -2,6 +2,7 @@
 #include "../Headers/DEFINITION.hpp"
 #include "../Headers/InputManager.hpp"
 #include "../Headers/GameState.hpp"
+#include "../PlayState.h"
 
 #include <iostream>
 #include <sstream>
@@ -59,9 +60,15 @@ void MainMenuState::HandleInput ( )
 
         //handle cases here
 
-        if ( _data->input.IsTextClicked ( _quitText, sf::Mouse::Left , _data->window ) )
+        if ( _data->input.IsTextClicked ( _quitText, sf::Mouse::Left , _data->window ) ) //Quit button pressed
         {
             _data->window.close ( );
+        }
+
+        if (_data->input.IsTextClicked(_playText, sf::Mouse::Left, _data->window)) //Play button pressed
+        {
+            _data->machine.AddState(StateRef(new PlayState(_data)), true);
+
         }
     
     }
