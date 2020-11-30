@@ -23,3 +23,7 @@
 
 //Font properties
 #define FONT_FILEPATH "Assets/Fonts/MarkerFelt.ttf"
+
+//Play State Properties
+#define PLAY_STATE_BACKGROUND_FILEPATH "Assets/Graphics/Background.png"
+#define PLAY_STATE_SMALL_CAR_FILEPATH "Assets/Graphics/small_car.png"
