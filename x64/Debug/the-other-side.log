@@ -1,10 +1,5 @@
 ﻿  PlayState.cpp
 E:\Visual Studio Projects\the-other-side\PlayState.cpp(7,15): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
 E:\Visual Studio Projects\the-other-side\PlayState.cpp(48,9): error C3861: 'Spawn': identifier not found
-  Game.cpp
-  GameState.cpp
-  main.cpp
-  MainMenuState.cpp
-  SplashState.cpp
   Vehicle.cpp
   Generating Code...
