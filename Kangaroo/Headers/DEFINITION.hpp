@@ -24,6 +24,12 @@
 //Font properties
 #define FONT_FILEPATH "Assets/Fonts/MarkerFelt.ttf"
 
-//Play State Properties
-#define PLAY_STATE_BACKGROUND_FILEPATH "Assets/Graphics/Background.png"
-#define PLAY_STATE_SMALL_CAR_FILEPATH "Assets/Graphics/small_car.png"
+//Game State Properties
+#define GAME_BACKGROUND_FILEPATH "Assets/Graphics/Background.png"
+#define LOG_SPRITE_FILEPATH "Assets/Graphics/Log.png"
+#define LEFT_SPAWN_CAR_FILEPATH "Assets/Graphics/LScar.png"
+#define RIGHT_SPAWN_CAR_FILEPATH "Assets/Graphics/RScar.png"
+#define CAR_SPAWN_FREQUENCY 1.5f
+
+#define KANGAROO_FILEPATH "Assets/Graphics/Kangaroo.png"
+#define KANGAROO_SPEED 200.f
