@@ -10,8 +10,8 @@ Logs::Logs ( GameDataRef data ) : _data ( data )
 void Logs::spawnLogsLeft ( float Lane)
 {
     int SelectedLane =  LogslaneSelect ( Lane );
-    sf::Sprite log( _data->assets.GetTexture ( "Raft Sprite" ) ) ;
-    log.setScale ( 5 , 2);
+    sf::Sprite log( _data->assets.GetTexture ( "Log Sprite" ) ) ;
+    log.setScale ( 0.4f , 0.4f);
     log.setPosition ( 0-log.getGlobalBounds().width, SelectedLane );
     _LogsSprites.push_back ( log ); 
 }
@@ -19,8 +19,8 @@ void Logs::spawnLogsLeft ( float Lane)
 void Logs::spawnLogsRight ( float Lane ) 
 {
     int SelectedLane =  LogslaneSelect ( Lane );
-    sf::Sprite log( _data->assets.GetTexture ( "Raft Sprite" ) ) ;
-    log.setScale ( 5 , 2 );
+    sf::Sprite log( _data->assets.GetTexture ( "Log Sprite" ) ) ;
+    log.setScale ( 0.4f , 0.4f );
     log.setPosition ( WINDOW_WIDTH + log.getGlobalBounds().width, SelectedLane );
     _LogsSprites.push_back ( log ); 
 }
@@ -31,15 +31,15 @@ int LogslaneSelect (int Lane){
     switch ( Lane )
     {
     case 0:
-        return 50;
+        return 45;
     case 3:
-        return 95;
+        return 90;
     case 1:
-        return 140;
+        return 135;
     case 4:
-        return 185;
+        return 180;
     default:
-        return 95;
+        return 90;
     }
 
 }
