@@ -9,9 +9,9 @@ Vehicle::Vehicle(GameDataRef data) : _data(data)
 
 void Vehicle::spawnVehicleLeft(float Lane)
 {
-    int SelectedLane = laneSelect(Lane);
+    int SelectedLane = laneSelect(Lane) - 5;
     sf::Sprite car(_data->assets.GetTexture("LSCar Sprite"));
-   
+    car.setScale(0.8f, 0.9f);
     car.setPosition(0-car.getGlobalBounds().width, SelectedLane);
     _vehicleSprites.push_back(car);
 }
@@ -31,17 +31,17 @@ int laneSelect(int Lane) {
     switch (Lane)
     {
     case 0:
-        return 450;
+        return 455;
     case 3:
-        return 405;
+        return 410;
     case 1:
-        return 360;
+        return 365;
     case 4:
-        return 315;
+        return 320;
     case 2:
-        return 270;
+        return 275;
     default:
-        return 450;
+        return 455;
     }
 
 }
@@ -72,7 +72,7 @@ void Vehicle::moveVehicleRight(float deltaTime)
 
         //delete object after it crosses the screen border
         float vehicleXcor = _vehicleSprites.at(i).getPosition().x;
-        float rightbound = -45;
+        float rightbound = 0-_vehicleSprites.at(i).getGlobalBounds().width;
 
         if (vehicleXcor < rightbound) {
             _vehicleSprites.erase(_vehicleSprites.begin() + i);
