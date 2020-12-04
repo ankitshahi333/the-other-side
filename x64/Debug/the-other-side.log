@@ -1,5 +1,27 @@
-﻿  PlayState.cpp
-E:\Visual Studio Projects\the-other-side\PlayState.cpp(7,15): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
-E:\Visual Studio Projects\the-other-side\PlayState.cpp(48,9): error C3861: 'Spawn': identifier not found
-  Vehicle.cpp
-  Generating Code...
+<<<<<<< Updated upstream
+﻿  Kangaroo.cpp
+E:\Visual Studio Projects\the-other-side\Sources\Kangaroo.cpp(7,57): warning C4244: 'argument': conversion from 'T' to 'float', possible loss of data
+          with
+          [
+              T=unsigned int
+          ]
+  the-other-side.vcxproj -> E:\Visual Studio Projects\the-other-side\x64\Debug\the-other-side.exe
+=======
+﻿  LINK : E:\Visual Studio Projects\the-other-side\x64\Debug\the-other-side.exe not found or not built by the last incremental link; performing full link
+GameState.obj : error LNK2019: unresolved external symbol "public: __cdecl Vehicle::Vehicle(class std::shared_ptr<struct GameData>)" (??0Vehicle@@QEAA@V?$shared_ptr@UGameData@@@std@@@Z) referenced in function "public: virtual void __cdecl GameState::Init(void)" (?Init@GameState@@UEAAXXZ)
+GameState.obj : error LNK2019: unresolved external symbol "public: void __cdecl Vehicle::spawnVehicleLeft(float)" (?spawnVehicleLeft@Vehicle@@QEAAXM@Z) referenced in function "public: virtual void __cdecl GameState::Update(float)" (?Update@GameState@@UEAAXM@Z)
+GameState.obj : error LNK2019: unresolved external symbol "public: void __cdecl Vehicle::spawnVehicleRight(float)" (?spawnVehicleRight@Vehicle@@QEAAXM@Z) referenced in function "public: virtual void __cdecl GameState::Update(float)" (?Update@GameState@@UEAAXM@Z)
+GameState.obj : error LNK2019: unresolved external symbol "public: void __cdecl Vehicle::moveVehicleLeft(float)" (?moveVehicleLeft@Vehicle@@QEAAXM@Z) referenced in function "public: virtual void __cdecl GameState::Update(float)" (?Update@GameState@@UEAAXM@Z)
+GameState.obj : error LNK2019: unresolved external symbol "public: void __cdecl Vehicle::moveVehicleRight(float)" (?moveVehicleRight@Vehicle@@QEAAXM@Z) referenced in function "public: virtual void __cdecl GameState::Update(float)" (?Update@GameState@@UEAAXM@Z)
+GameState.obj : error LNK2019: unresolved external symbol "public: void __cdecl Vehicle::drawVehicle(void)" (?drawVehicle@Vehicle@@QEAAXXZ) referenced in function "public: virtual void __cdecl GameState::Draw(float)" (?Draw@GameState@@UEAAXM@Z)
+GameState.obj : error LNK2019: unresolved external symbol "public: __cdecl Logs::Logs(class std::shared_ptr<struct GameData>)" (??0Logs@@QEAA@V?$shared_ptr@UGameData@@@std@@@Z) referenced in function "public: virtual void __cdecl GameState::Init(void)" (?Init@GameState@@UEAAXXZ)
+GameState.obj : error LNK2019: unresolved external symbol "public: void __cdecl Logs::spawnLogsLeft(float)" (?spawnLogsLeft@Logs@@QEAAXM@Z) referenced in function "public: virtual void __cdecl GameState::Update(float)" (?Update@GameState@@UEAAXM@Z)
+GameState.obj : error LNK2019: unresolved external symbol "public: void __cdecl Logs::spawnLogsRight(float)" (?spawnLogsRight@Logs@@QEAAXM@Z) referenced in function "public: virtual void __cdecl GameState::Update(float)" (?Update@GameState@@UEAAXM@Z)
+GameState.obj : error LNK2019: unresolved external symbol "public: void __cdecl Logs::moveLogsLeft(float)" (?moveLogsLeft@Logs@@QEAAXM@Z) referenced in function "public: virtual void __cdecl GameState::Update(float)" (?Update@GameState@@UEAAXM@Z)
+GameState.obj : error LNK2019: unresolved external symbol "public: void __cdecl Logs::moveLogsRight(float)" (?moveLogsRight@Logs@@QEAAXM@Z) referenced in function "public: virtual void __cdecl GameState::Update(float)" (?Update@GameState@@UEAAXM@Z)
+GameState.obj : error LNK2019: unresolved external symbol "public: void __cdecl Logs::drawLogs(void)" (?drawLogs@Logs@@QEAAXXZ) referenced in function "public: virtual void __cdecl GameState::Draw(float)" (?Draw@GameState@@UEAAXM@Z)
+GameState.obj : error LNK2019: unresolved external symbol "public: __cdecl Kangaroo::Kangaroo(class std::shared_ptr<struct GameData>)" (??0Kangaroo@@QEAA@V?$shared_ptr@UGameData@@@std@@@Z) referenced in function "public: virtual void __cdecl GameState::Init(void)" (?Init@GameState@@UEAAXXZ)
+GameState.obj : error LNK2019: unresolved external symbol "public: void __cdecl Kangaroo::update(float)" (?update@Kangaroo@@QEAAXM@Z) referenced in function "public: virtual void __cdecl GameState::Update(float)" (?Update@GameState@@UEAAXM@Z)
+GameState.obj : error LNK2019: unresolved external symbol "public: void __cdecl Kangaroo::drawKangaroo(void)" (?drawKangaroo@Kangaroo@@QEAAXXZ) referenced in function "public: virtual void __cdecl GameState::Draw(float)" (?Draw@GameState@@UEAAXM@Z)
+E:\Visual Studio Projects\the-other-side\x64\Debug\the-other-side.exe : fatal error LNK1120: 15 unresolved externals
+>>>>>>> Stashed changes
