@@ -17,6 +17,7 @@ public:
     void HandleInput();
     void Update(float deltaTime);
     void Draw(float deltaTime);
+    void addScore();
 
 private:
     GameDataRef _data;
@@ -33,4 +34,9 @@ private:
 
     Kangaroo* kangaroo;
 
+    sf::Text scoreText;
+    sf::Font font;
+
+    int _score;
+    float initialYPosition; // Initial y position of kangaroo
 };

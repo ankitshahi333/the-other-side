@@ -12,6 +12,17 @@ Kangaroo::~Kangaroo()
 
 }
 
+float Kangaroo::getPosition()
+{
+	return _kangarooSprite.getPosition().y;
+}
+
+void Kangaroo::setPosition(float yPosition)
+{
+	float xPosition = _kangarooSprite.getPosition().x;
+	this->_kangarooSprite.setPosition(xPosition, yPosition);
+}
+
 void Kangaroo::update(float deltaTime)
 {
 	

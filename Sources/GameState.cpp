@@ -18,6 +18,14 @@ void GameState::Init()
     _data->assets.LoadTexture("RSCar Sprite", RIGHT_SPAWN_CAR_FILEPATH);
     _data->assets.LoadTexture("Kangaroo Sprite", KANGAROO_FILEPATH);
 
+    //Adding the score text
+    if (!font.loadFromFile(FONT_FILEPATH)) {
+        std::cout << "Error opening font.";
+    }
+    scoreText.setFont(font);
+    scoreText.setString("Score: 0");
+    scoreText.setPosition(5, 2);
+
 
     //Setting texture for sprites
     _background.setTexture(_data->assets.GetTexture("Game Background"));
@@ -29,6 +37,8 @@ void GameState::Init()
     logsRight = new Logs(_data);
     kangaroo = new Kangaroo(_data);
 
+    //Initial position of kangaroo
+    initialYPosition = kangaroo->getPosition();
 }
 
 void GameState::HandleInput()
@@ -48,6 +58,12 @@ void GameState::HandleInput()
 
 void GameState::Update(float deltaTime)
 {
+    //Checking the y position of the kangaroo
+    float yPositionOfKangaroo = kangaroo->getPosition();
+    if (yPositionOfKangaroo <= 0) {
+        addScore();
+    }
+
     vehicleLeft->moveVehicleLeft(deltaTime);
     vehicleRight->moveVehicleRight(deltaTime);
 
@@ -82,12 +98,24 @@ void GameState::Draw(float deltaTime)
 {
     _data->window.clear();
     _data->window.draw(_background);
+    _data->window.draw(scoreText);
     kangaroo->drawKangaroo();
     vehicleLeft->drawVehicle();
     vehicleRight->drawVehicle();
     logsLeft->drawLogs();
     logsRight->drawLogs();
     _data->window.display();
+}
+
+void GameState::addScore()
+{
+    //Updating score
+    _score++;
+    std::string newScore = "Score: " + std::to_string(_score);
+    scoreText.setString(newScore);
+
+    //Replace Kangaroo
+    kangaroo->setPosition(initialYPosition);
 }
 
 

@@ -10,7 +10,8 @@ public:
 	Kangaroo(GameDataRef data);
 	~Kangaroo();
 
-	
+	float getPosition();
+	void setPosition(float yPosition);
 	void update(float deltaTime);
 	void drawKangaroo();
 
