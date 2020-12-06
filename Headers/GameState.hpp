@@ -1,11 +1,13 @@
 #pragma once
 
 #include <SFML/Graphics.hpp>
+#include <SFML/Audio.hpp>
 #include "Game.hpp"
 #include "State.hpp"
 #include "Vehicle.hpp"
 #include "Logs.hpp"
 #include "Kangaroo.hpp"
+#include "Collision.hpp"
 
 class GameState : public State
 {
@@ -17,6 +19,7 @@ public:
     void HandleInput();
     void Update(float deltaTime);
     void Draw(float deltaTime);
+    void DetectCollision(float deltaTime);
     void addScore();
 
 private:
@@ -24,7 +27,9 @@ private:
     sf::Sprite _background;
 
     sf::Clock clock;
-    sf::Clock clock2;
+    sf::Clock clock2;   // to control log spawn 
+    sf::Clock clock3;   // to quantize kangaroo movement
+    sf::Clock clock4;
 
     Vehicle* vehicleLeft;
     Vehicle* vehicleRight;
@@ -34,9 +39,18 @@ private:
 
     Kangaroo* kangaroo;
 
+    Collision collision;
+
+    sf::SoundBuffer _killSoundBuffer;
+    sf::Sound _killSound;
+
+    int _gameState;
+
+    //scoring assets
     sf::Text scoreText;
     sf::Font font;
-
     int _score;
     float initialYPosition; // Initial y position of kangaroo
+
+
 };

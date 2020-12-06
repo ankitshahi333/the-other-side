@@ -1,27 +1,8 @@
-﻿  Game.cpp
-  GameState.cpp
-E:\Visual Studio Projects\the-other-side\Sources\GameState.cpp(77,39): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
-E:\Visual Studio Projects\the-other-side\Sources\GameState.cpp(80,41): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
-E:\Visual Studio Projects\the-other-side\Sources\GameState.cpp(87,33): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
-E:\Visual Studio Projects\the-other-side\Sources\GameState.cpp(90,35): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
-  Kangaroo.cpp
-E:\Visual Studio Projects\the-other-side\Sources\Kangaroo.cpp(7,57): warning C4244: 'argument': conversion from 'T' to 'float', possible loss of data
-          with
-          [
-              T=unsigned int
-          ]
-  Logs.cpp
-E:\Visual Studio Projects\the-other-side\Sources\Logs.cpp(12,42): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
-E:\Visual Studio Projects\the-other-side\Sources\Logs.cpp(15,54): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
-E:\Visual Studio Projects\the-other-side\Sources\Logs.cpp(21,42): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
-E:\Visual Studio Projects\the-other-side\Sources\Logs.cpp(24,67): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
-  MainMenuState.cpp
-  SplashState.cpp
-  Vehicle.cpp
-E:\Visual Studio Projects\the-other-side\Sources\Vehicle.cpp(12,35): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
-E:\Visual Studio Projects\the-other-side\Sources\Vehicle.cpp(15,52): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
-E:\Visual Studio Projects\the-other-side\Sources\Vehicle.cpp(21,35): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
-E:\Visual Studio Projects\the-other-side\Sources\Vehicle.cpp(24,65): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
-  main.cpp
-  Generating Code...
+﻿  Logs.cpp
+E:\Visual Studio Projects\the-other-side\Sources\Logs.cpp(12,39): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+E:\Visual Studio Projects\the-other-side\Sources\Logs.cpp(14,54): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+E:\Visual Studio Projects\the-other-side\Sources\Logs.cpp(20,39): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+E:\Visual Studio Projects\the-other-side\Sources\Logs.cpp(22,65): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+E:\Visual Studio Projects\the-other-side\Sources\Logs.cpp(61,28): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
+E:\Visual Studio Projects\the-other-side\Sources\Logs.cpp(83,28): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
   the-other-side.vcxproj -> E:\Visual Studio Projects\the-other-side\x64\Debug\the-other-side.exe
