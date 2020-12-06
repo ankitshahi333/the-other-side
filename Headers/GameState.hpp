@@ -9,6 +9,7 @@
 #include "Kangaroo.hpp"
 #include "Collision.hpp"
 
+
 class GameState : public State
 {
 public:
@@ -40,11 +41,14 @@ private:
     Kangaroo* kangaroo;
 
     Collision collision;
+    
 
     sf::SoundBuffer _killSoundBuffer;
     sf::Sound _killSound;
 
     int _gameState;
+   
+    
 
     //scoring assets
     sf::Text scoreText;
@@ -52,5 +56,8 @@ private:
     int _score;
     float initialYPosition; // Initial y position of kangaroo
 
+    //lives assets
+    sf::Text livesLeft;
+    int _lives;
 
 };
