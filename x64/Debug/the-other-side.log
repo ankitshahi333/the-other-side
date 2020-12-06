@@ -1,8 +1,1 @@
-﻿  Logs.cpp
-E:\Visual Studio Projects\the-other-side\Sources\Logs.cpp(12,39): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
-E:\Visual Studio Projects\the-other-side\Sources\Logs.cpp(14,54): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
-E:\Visual Studio Projects\the-other-side\Sources\Logs.cpp(20,39): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
-E:\Visual Studio Projects\the-other-side\Sources\Logs.cpp(22,65): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
-E:\Visual Studio Projects\the-other-side\Sources\Logs.cpp(61,28): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
-E:\Visual Studio Projects\the-other-side\Sources\Logs.cpp(83,28): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
-  the-other-side.vcxproj -> E:\Visual Studio Projects\the-other-side\x64\Debug\the-other-side.exe
+﻿  the-other-side.vcxproj -> E:\Visual Studio Projects\the-other-side\x64\Debug\the-other-side.exe
