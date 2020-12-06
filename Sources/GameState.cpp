@@ -13,7 +13,7 @@ void GameState::Init()
 
     //Texture loading section
     _data->assets.LoadTexture("Game Background", GAME_BACKGROUND_FILEPATH);
-    _data->assets.LoadTexture("Raft Sprite", RAFT_SPRITE_FILEPATH);
+    _data->assets.LoadTexture("Log Sprite", LOG_SPRITE_FILEPATH);
     _data->assets.LoadTexture("LSCar Sprite", LEFT_SPAWN_CAR_FILEPATH);
     _data->assets.LoadTexture("RSCar Sprite", RIGHT_SPAWN_CAR_FILEPATH);
     _data->assets.LoadTexture("Kangaroo Sprite", KANGAROO_FILEPATH);

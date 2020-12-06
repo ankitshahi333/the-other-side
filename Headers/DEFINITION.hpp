@@ -26,7 +26,7 @@
 
 //Game State Properties
 #define GAME_BACKGROUND_FILEPATH "Assets/Graphics/Background.png"
-#define RAFT_SPRITE_FILEPATH "Assets/Graphics/rect.png"
+#define LOG_SPRITE_FILEPATH "Assets/Graphics/Log.png"
 #define LEFT_SPAWN_CAR_FILEPATH "Assets/Graphics/LScar.png"
 #define RIGHT_SPAWN_CAR_FILEPATH "Assets/Graphics/RScar.png"
 #define CAR_SPAWN_FREQUENCY 1.5f
