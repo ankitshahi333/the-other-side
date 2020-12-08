@@ -24,7 +24,6 @@ void GameOverState::Init()
     }
     readFile.close();
     std::ofstream writeFile("best.txt");
-    std::cout << "Best : " << _best << std::endl;
     if (writeFile.is_open())
     {
         if (_score > _best)
