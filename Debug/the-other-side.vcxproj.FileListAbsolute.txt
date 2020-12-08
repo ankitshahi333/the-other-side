@@ -1,0 +1,2 @@
+E:\Visual Studio Projects\the-other-side\Debug\the-other-side.exe
+E:\Visual Studio Projects\the-other-side\Debug\the-other-side.pdb

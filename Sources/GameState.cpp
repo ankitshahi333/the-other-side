@@ -27,7 +27,7 @@ void GameState::Init()
     _data->assets.LoadFont("Score", FONT_FILEPATH);
 
     //Adding the score text
-   
+
     scoreText.setFont(_data->assets.GetFont("Score"));
     scoreText.setString("Score: 0");
     //scoreText.setOrigin ( scoreText.getGlobalBounds ().width / 2 , scoreText.getGlobalBounds ().height / 2 ) ;
@@ -37,7 +37,7 @@ void GameState::Init()
     _lives = 5;
     livesLeft.setFont(_data->assets.GetFont("Score"));
     livesLeft.setString("Lives: 5");
-    livesLeft.setPosition(_data->window.getSize().x - 100,2);
+    livesLeft.setPosition(_data->window.getSize().x - 100, 2);
 
 
     //Setting texture for sprites
@@ -50,7 +50,7 @@ void GameState::Init()
     logsLeft = new Logs(_data);
     logsRight = new Logs(_data);
     kangaroo = new Kangaroo(_data);
-   
+
 
     _gameState = eGameState::eplaying;
 
@@ -136,7 +136,7 @@ void GameState::DetectCollision(float deltaTime) {
 
     //collision detection
 
-    //collision with vehicle spawning from right
+    //collision with vehicle spawning from left
     std::vector<sf::Sprite> VLeftSprites = vehicleLeft->getVehicleSprite();
     for (int i = 0; i < VLeftSprites.size(); i++)
     {
@@ -145,8 +145,8 @@ void GameState::DetectCollision(float deltaTime) {
             _killSound.play();
             _lives--;
             std::cout << "Collision with VLEFT" << std::endl;
-            if(_lives==0)
-            _gameState = eGameState::eGameOver;
+            if (_lives == 0)
+                _gameState = eGameState::eGameOver;
             kangaroo->setPosition(initialYPosition);
         }
     }
@@ -160,8 +160,8 @@ void GameState::DetectCollision(float deltaTime) {
             _killSound.play();
             _lives--;
             std::cout << "Collision with VRIGHT" << std::endl;
-            if(_lives==0)
-            _gameState = eGameState::eGameOver;
+            if (_lives == 0)
+                _gameState = eGameState::eGameOver;
             kangaroo->setPosition(initialYPosition);
         }
 
@@ -198,7 +198,7 @@ void GameState::DetectCollision(float deltaTime) {
                 if (_lives == 0)
                     _gameState = eGameState::eGameOver;
                 kangaroo->setPosition(initialYPosition);
-               
+
 
                 clock4.restart();
             }
@@ -239,7 +239,7 @@ void GameState::DetectCollision(float deltaTime) {
     std::string remainingLives = "Lives: " + std::to_string(_lives);
     livesLeft.setString(remainingLives);
 
-  
+
 
 }
 
