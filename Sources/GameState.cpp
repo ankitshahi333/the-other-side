@@ -58,9 +58,6 @@ void GameState::Init()
     initialYPosition = kangaroo->getPosition();
     _score = 0;
 
-
-
-
 }
 
 void GameState::HandleInput()
@@ -145,8 +142,8 @@ void GameState::DetectCollision(float deltaTime) {
             _killSound.play();
             _lives--;
             std::cout << "Collision with VLEFT" << std::endl;
-            if (_lives == 0)
-                _gameState = eGameState::eGameOver;
+            if(_lives<0)
+            _gameState = eGameState::eGameOver;
             kangaroo->setPosition(initialYPosition);
         }
     }
@@ -160,8 +157,8 @@ void GameState::DetectCollision(float deltaTime) {
             _killSound.play();
             _lives--;
             std::cout << "Collision with VRIGHT" << std::endl;
-            if (_lives == 0)
-                _gameState = eGameState::eGameOver;
+            if(_lives < 0)
+            _gameState = eGameState::eGameOver;
             kangaroo->setPosition(initialYPosition);
         }
 
@@ -195,7 +192,7 @@ void GameState::DetectCollision(float deltaTime) {
             {
                 _lives--;
                 std::cout << "Out" << std::endl;
-                if (_lives == 0)
+                if (_lives < 0)
                     _gameState = eGameState::eGameOver;
                 kangaroo->setPosition(initialYPosition);
 
@@ -228,7 +225,7 @@ void GameState::DetectCollision(float deltaTime) {
             {
                 _lives--;
                 std::cout << "Out" << std::endl;
-                if (_lives == 0)
+                if (_lives < 0)
                     _gameState = eGameState::eGameOver;
                 kangaroo->setPosition(initialYPosition);
                 clock4.restart();
