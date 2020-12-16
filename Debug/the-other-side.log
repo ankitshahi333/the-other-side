@@ -1,41 +1,17 @@
-﻿  GameOverState.cpp
-E:\Visual Studio Projects\the-other-side\Sources\GameOverState.cpp(68,58): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
-E:\Visual Studio Projects\the-other-side\Sources\GameOverState.cpp(80,89): warning C4244: 'argument': conversion from 'T' to 'float', possible loss of data
-          with
-          [
-              T=unsigned int
-          ]
-E:\Visual Studio Projects\the-other-side\Sources\GameOverState.cpp(80,54): warning C4244: 'argument': conversion from 'T' to 'float', possible loss of data
-          with
-          [
-              T=unsigned int
-          ]
-E:\Visual Studio Projects\the-other-side\Sources\GameOverState.cpp(86,88): warning C4244: 'argument': conversion from 'T' to 'float', possible loss of data
-          with
-          [
-              T=unsigned int
-          ]
-E:\Visual Studio Projects\the-other-side\Sources\GameOverState.cpp(86,53): warning C4244: 'argument': conversion from 'T' to 'float', possible loss of data
-          with
-          [
-              T=unsigned int
-          ]
-  GameState.cpp
+﻿  GameState.cpp
 E:\Visual Studio Projects\the-other-side\Sources\GameState.cpp(40,53): warning C4244: 'argument': conversion from 'T' to 'float', possible loss of data
           with
           [
               T=unsigned int
           ]
-E:\Visual Studio Projects\the-other-side\Sources\GameState.cpp(99,39): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
-E:\Visual Studio Projects\the-other-side\Sources\GameState.cpp(102,41): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
-E:\Visual Studio Projects\the-other-side\Sources\GameState.cpp(109,33): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
-E:\Visual Studio Projects\the-other-side\Sources\GameState.cpp(112,35): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
-E:\Visual Studio Projects\the-other-side\Sources\GameState.cpp(141,23): warning C4018: '<': signed/unsigned mismatch
-E:\Visual Studio Projects\the-other-side\Sources\GameState.cpp(156,23): warning C4018: '<': signed/unsigned mismatch
-E:\Visual Studio Projects\the-other-side\Sources\GameState.cpp(178,23): warning C4018: '<': signed/unsigned mismatch
-E:\Visual Studio Projects\the-other-side\Sources\GameState.cpp(184,55): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
-E:\Visual Studio Projects\the-other-side\Sources\GameState.cpp(211,23): warning C4018: '<': signed/unsigned mismatch
-E:\Visual Studio Projects\the-other-side\Sources\GameState.cpp(217,57): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
-  Generating Code...
-  LINK : E:\Visual Studio Projects\the-other-side\Debug\the-other-side.exe not found or not built by the last incremental link; performing full link
+E:\Visual Studio Projects\the-other-side\Sources\GameState.cpp(96,39): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+E:\Visual Studio Projects\the-other-side\Sources\GameState.cpp(99,41): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+E:\Visual Studio Projects\the-other-side\Sources\GameState.cpp(106,33): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+E:\Visual Studio Projects\the-other-side\Sources\GameState.cpp(109,35): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+E:\Visual Studio Projects\the-other-side\Sources\GameState.cpp(138,23): warning C4018: '<': signed/unsigned mismatch
+E:\Visual Studio Projects\the-other-side\Sources\GameState.cpp(153,23): warning C4018: '<': signed/unsigned mismatch
+E:\Visual Studio Projects\the-other-side\Sources\GameState.cpp(175,23): warning C4018: '<': signed/unsigned mismatch
+E:\Visual Studio Projects\the-other-side\Sources\GameState.cpp(181,55): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+E:\Visual Studio Projects\the-other-side\Sources\GameState.cpp(208,23): warning C4018: '<': signed/unsigned mismatch
+E:\Visual Studio Projects\the-other-side\Sources\GameState.cpp(214,57): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
   the-other-side.vcxproj -> E:\Visual Studio Projects\the-other-side\Debug\the-other-side.exe
