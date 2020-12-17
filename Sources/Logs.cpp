@@ -11,6 +11,7 @@ void Logs::spawnLogsLeft(float Lane)
 {
     int SelectedLane = LogslaneSelect(Lane);
     sf::Sprite log(_data->assets.GetTexture("Log Sprite"));
+    //log.setScale ( 0.65f , 0.35f );
     log.setPosition(0 - log.getGlobalBounds().width, SelectedLane);
     _LogsSprites.push_back(log);
 }
@@ -19,6 +20,7 @@ void Logs::spawnLogsRight(float Lane)
 {
     int SelectedLane = LogslaneSelect(Lane);
     sf::Sprite log(_data->assets.GetTexture("Log Sprite"));
+    //log.setScale ( 0.65f , 0.35f );
     log.setPosition(WINDOW_WIDTH + log.getGlobalBounds().width, SelectedLane);
     _LogsSprites.push_back(log);
 }
@@ -45,8 +47,8 @@ int LogslaneSelect(int Lane) {
 
 void Logs::moveLogsLeft(float deltaTime)
 {
-    for (unsigned short int i = 0; i < _LogsSprites.size(); i++) {
-
+    for (unsigned short int i = 0; i < _LogsSprites.size(); i++)
+    {
         //delete object after it crosses the screen border
         float LogsXcor = _LogsSprites.at(i).getPosition().x;
         float leftbound = WINDOW_WIDTH + _LogsSprites.at(i).getGlobalBounds().width;
@@ -60,7 +62,6 @@ void Logs::moveLogsLeft(float deltaTime)
             _LogsSprites.at(i).move(movement, 0);
             XlogVelocity = movement;
         }
-
     }
 }
 
@@ -86,19 +87,21 @@ void Logs::moveLogsRight(float deltaTime)
     }
 }
 
-int Logs::getXvelocity() {
+int Logs::getXvelocity()
+{
     return XlogVelocity;
 }
 
-
 void Logs::drawLogs()
 {
-    for (unsigned short int i = 0; i < _LogsSprites.size(); i++) {
+    for (unsigned short int i = 0; i < _LogsSprites.size(); i++)
+    {
         _data->window.draw(_LogsSprites.at(i));
     }
 }
 
 //returns LogsSprite properties to check collision
-const std::vector<sf::Sprite>& Logs::getLogsSprite() const {
+const std::vector<sf::Sprite>& Logs::getLogsSprite() const
+{
     return _LogsSprites;
 }

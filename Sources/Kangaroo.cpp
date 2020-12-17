@@ -1,5 +1,6 @@
-#include "../Headers/Kangaroo.hpp"
 #include <iostream>
+
+#include "../Headers/Kangaroo.hpp"
 
 Kangaroo::Kangaroo(GameDataRef data) : _data(data)
 {
@@ -10,8 +11,8 @@ Kangaroo::Kangaroo(GameDataRef data) : _data(data)
 	_jumpSound.setBuffer(_jumpSoundBuffer);
 
 	_kangarooSprite.setTexture(_data->assets.GetTexture("Kangaroo Sprite"));
-	_kangarooSprite.setScale(0.275f, 0.2f);
-	_kangarooSprite.setPosition((_data->window.getSize().x / 2), (_data->window.getSize().y - _kangarooSprite.getGlobalBounds().height));
+	_kangarooSprite.setScale(0.255f, 0.2f);
+	_kangarooSprite.setPosition(WINDOW_WIDTH / 2, WINDOW_HEIGHT - _kangarooSprite.getGlobalBounds().height);
 }
 
 Kangaroo::~Kangaroo()

@@ -1,8 +1,7 @@
+#include <iostream>
+
 #include "../Headers/GameState.hpp"
 #include "../Headers/DEFINITION.hpp"
-#include "../Headers/GameOverState.hpp"
-#include <iostream>
-#include <sstream>
 
 GameState::GameState(GameDataRef data) : _data(data)      //assigns value of data to _data when constructor is called
 {
@@ -13,10 +12,13 @@ void GameState::Init()
 {
     //Audio Loading section
 
-    if (!_killSoundBuffer.loadFromFile(KILL_SOUND_FILEPATH)) {
+    if (!_killSoundBuffer.loadFromFile(KILL_SOUND_FILEPATH))
         std::cout << "Kill sound not found." << std::endl;
-    }
     _killSound.setBuffer(_killSoundBuffer);
+
+    if (!_splashSoundBuffer.loadFromFile(SPLASH_SOUND_FILEPATH))
+        std::cout << "Splash sound not found." << std::endl;
+    _splashSound.setBuffer(_splashSoundBuffer);
 
     //Texture loading section
     _data->assets.LoadTexture("Game Background", GAME_BACKGROUND_FILEPATH);
@@ -26,7 +28,6 @@ void GameState::Init()
     _data->assets.LoadTexture("Kangaroo Sprite", KANGAROO_FILEPATH);
     _data->assets.LoadFont("Score", FONT_FILEPATH);
 
-    //Adding the score text
 
     scoreText.setFont(_data->assets.GetFont("Score"));
     scoreText.setString("Score: 0");
@@ -39,7 +40,6 @@ void GameState::Init()
     livesLeft.setString("Lives: 5");
     livesLeft.setPosition(_data->window.getSize().x - 100, 2);
 
-
     //Setting texture for sprites
     _background.setTexture(_data->assets.GetTexture("Game Background"));
 
@@ -51,12 +51,12 @@ void GameState::Init()
     logsRight = new Logs(_data);
     kangaroo = new Kangaroo(_data);
 
-
-    _gameState = eGameState::eplaying;
+    _gameState = eGameState::eReady;
 
     //Initial position of kangaroo
     initialYPosition = kangaroo->getPosition();
     _score = 0;
+
 
 }
 
@@ -110,7 +110,12 @@ void GameState::Update(float deltaTime)
         clock2.restart();
     }
 
+    // kangaroo cannot move for five seconds and gives time for vehicle and Logs to spawn
+    ReadyTime = clock5.getElapsedTime().asSeconds();
+    if (ReadyTime >= 5 and ReadyTime < 6)
+        _gameState = eGameState::eplaying;
 
+    //now kangaroo can move 
     if (_gameState == eGameState::eplaying) {
 
         if (clock3.getElapsedTime().asSeconds() > KANGAROO_MOVE_TIME_DELAY) {
@@ -120,12 +125,11 @@ void GameState::Update(float deltaTime)
 
         //passes control to collision detection section
         DetectCollision(deltaTime);
+    }
 
-    }
+    //if out, go to new State 
     if (_gameState == eGameState::eGameOver)
-    {
         _data->machine.AddState(StateRef(new GameOverState(_data, _score)), true);
-    }
 
 }
 
@@ -133,7 +137,7 @@ void GameState::DetectCollision(float deltaTime) {
 
     //collision detection
 
-    //collision with vehicle spawning from left
+    //collision with vehicle spawning from right
     std::vector<sf::Sprite> VLeftSprites = vehicleLeft->getVehicleSprite();
     for (int i = 0; i < VLeftSprites.size(); i++)
     {
@@ -142,8 +146,8 @@ void GameState::DetectCollision(float deltaTime) {
             _killSound.play();
             _lives--;
             std::cout << "Collision with VLEFT" << std::endl;
-            if(_lives<0)
-            _gameState = eGameState::eGameOver;
+            if (_lives < 0)
+                _gameState = eGameState::eGameOver;
             kangaroo->setPosition(initialYPosition);
         }
     }
@@ -157,9 +161,10 @@ void GameState::DetectCollision(float deltaTime) {
             _killSound.play();
             _lives--;
             std::cout << "Collision with VRIGHT" << std::endl;
-            if(_lives < 0)
-            _gameState = eGameState::eGameOver;
+            if (_lives < 0)
+                _gameState = eGameState::eGameOver;
             kangaroo->setPosition(initialYPosition);
+
         }
 
     }
@@ -188,16 +193,15 @@ void GameState::DetectCollision(float deltaTime) {
         }
 
         else if (inRiver) {
-            if (clock4.getElapsedTime().asSeconds() > 0.5)
+            if (clock4.getElapsedTime().asSeconds() > KANGAROO_MOVE_TIME_DELAY)
             {
-                _lives--;
                 std::cout << "Out" << std::endl;
+                _splashSound.play();
+                _lives--;
+                clock4.restart();
                 if (_lives < 0)
                     _gameState = eGameState::eGameOver;
                 kangaroo->setPosition(initialYPosition);
-
-
-                clock4.restart();
             }
         }
 
@@ -221,22 +225,21 @@ void GameState::DetectCollision(float deltaTime) {
         }
 
         else if (inRiver) {
-            if (clock4.getElapsedTime().asSeconds() > 0.5)
+            if (clock4.getElapsedTime().asSeconds() > KANGAROO_MOVE_TIME_DELAY)
             {
-                _lives--;
                 std::cout << "Out" << std::endl;
+                _splashSound.play();
+                _lives--;
+                clock4.restart();
                 if (_lives < 0)
                     _gameState = eGameState::eGameOver;
                 kangaroo->setPosition(initialYPosition);
-                clock4.restart();
             }
         }
     }
 
     std::string remainingLives = "Lives: " + std::to_string(_lives);
     livesLeft.setString(remainingLives);
-
-
 
 }
 

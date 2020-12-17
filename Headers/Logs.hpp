@@ -1,6 +1,7 @@
 #pragma once
 
 #include <SFML/Graphics.hpp>
+
 #include "DEFINITION.hpp"
 #include "Game.hpp"
 #include <vector>
@@ -9,7 +10,6 @@ class Logs
 {
 
 public:
-
     Logs(GameDataRef data);
 
     void spawnLogsLeft(float Lane);
@@ -19,12 +19,11 @@ public:
     int getXvelocity();
     void drawLogs();
 
-    const std::vector<sf::Sprite>& getLogsSprite() const;
+    const std::vector< sf::Sprite >& getLogsSprite() const;
 
 private:
-
     GameDataRef _data;
 
-    std::vector<sf::Sprite> _LogsSprites;
+    std::vector< sf::Sprite > _LogsSprites;
     int XlogVelocity;
 };

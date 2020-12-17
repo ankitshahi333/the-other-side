@@ -1,0 +1,210 @@
+﻿  AssetManager.cpp
+  Collision.cpp
+  Game.cpp
+  GameOverState.cpp
+F:\TheOtherSide\TheOtherSide\TheOtherSide\Sources\GameOverState.cpp(70,45): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+F:\TheOtherSide\TheOtherSide\TheOtherSide\Sources\GameOverState.cpp(80,89): warning C4244: 'argument': conversion from 'T' to 'float', possible loss of data
+          with
+          [
+              T=unsigned int
+          ]
+F:\TheOtherSide\TheOtherSide\TheOtherSide\Sources\GameOverState.cpp(80,54): warning C4244: 'argument': conversion from 'T' to 'float', possible loss of data
+          with
+          [
+              T=unsigned int
+          ]
+F:\TheOtherSide\TheOtherSide\TheOtherSide\Sources\GameOverState.cpp(86,88): warning C4244: 'argument': conversion from 'T' to 'float', possible loss of data
+          with
+          [
+              T=unsigned int
+          ]
+F:\TheOtherSide\TheOtherSide\TheOtherSide\Sources\GameOverState.cpp(86,53): warning C4244: 'argument': conversion from 'T' to 'float', possible loss of data
+          with
+          [
+              T=unsigned int
+          ]
+  GameState.cpp
+F:\TheOtherSide\TheOtherSide\TheOtherSide\Sources\GameState.cpp(41,53): warning C4244: 'argument': conversion from 'T' to 'float', possible loss of data
+          with
+          [
+              T=unsigned int
+          ]
+F:\TheOtherSide\TheOtherSide\TheOtherSide\Sources\GameState.cpp(96,39): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+F:\TheOtherSide\TheOtherSide\TheOtherSide\Sources\GameState.cpp(99,41): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+F:\TheOtherSide\TheOtherSide\TheOtherSide\Sources\GameState.cpp(106,33): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+F:\TheOtherSide\TheOtherSide\TheOtherSide\Sources\GameState.cpp(109,35): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+F:\TheOtherSide\TheOtherSide\TheOtherSide\Sources\GameState.cpp(114,50): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
+F:\TheOtherSide\TheOtherSide\TheOtherSide\Sources\GameState.cpp(142,23): warning C4018: '<': signed/unsigned mismatch
+F:\TheOtherSide\TheOtherSide\TheOtherSide\Sources\GameState.cpp(157,23): warning C4018: '<': signed/unsigned mismatch
+F:\TheOtherSide\TheOtherSide\TheOtherSide\Sources\GameState.cpp(180,23): warning C4018: '<': signed/unsigned mismatch
+F:\TheOtherSide\TheOtherSide\TheOtherSide\Sources\GameState.cpp(186,55): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+F:\TheOtherSide\TheOtherSide\TheOtherSide\Sources\GameState.cpp(212,23): warning C4018: '<': signed/unsigned mismatch
+F:\TheOtherSide\TheOtherSide\TheOtherSide\Sources\GameState.cpp(218,57): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+  InputManager.cpp
+F:\TheOtherSide\TheOtherSide\TheOtherSide\Sources\InputManager.cpp(8,69): warning C4244: 'argument': conversion from 'T' to 'T', possible loss of data
+          with
+          [
+              T=float
+          ]
+          and
+          [
+              T=int
+          ]
+F:\TheOtherSide\TheOtherSide\TheOtherSide\Sources\InputManager.cpp(8,37): warning C4244: 'argument': conversion from 'T' to 'T', possible loss of data
+          with
+          [
+              T=float
+          ]
+          and
+          [
+              T=int
+          ]
+F:\TheOtherSide\TheOtherSide\TheOtherSide\Sources\InputManager.cpp(7,74): warning C4244: 'argument': conversion from 'const T' to 'T', possible loss of data
+          with
+          [
+              T=float
+          ]
+          and
+          [
+              T=int
+          ]
+F:\TheOtherSide\TheOtherSide\TheOtherSide\Sources\InputManager.cpp(7,50): warning C4244: 'argument': conversion from 'const T' to 'T', possible loss of data
+          with
+          [
+              T=float
+          ]
+          and
+          [
+              T=int
+          ]
+F:\TheOtherSide\TheOtherSide\TheOtherSide\Sources\InputManager.cpp(19,65): warning C4244: 'argument': conversion from 'T' to 'T', possible loss of data
+          with
+          [
+              T=float
+          ]
+          and
+          [
+              T=int
+          ]
+F:\TheOtherSide\TheOtherSide\TheOtherSide\Sources\InputManager.cpp(19,33): warning C4244: 'argument': conversion from 'T' to 'T', possible loss of data
+          with
+          [
+              T=float
+          ]
+          and
+          [
+              T=int
+          ]
+F:\TheOtherSide\TheOtherSide\TheOtherSide\Sources\InputManager.cpp(18,70): warning C4244: 'argument': conversion from 'const T' to 'T', possible loss of data
+          with
+          [
+              T=float
+          ]
+          and
+          [
+              T=int
+          ]
+F:\TheOtherSide\TheOtherSide\TheOtherSide\Sources\InputManager.cpp(18,46): warning C4244: 'argument': conversion from 'const T' to 'T', possible loss of data
+          with
+          [
+              T=float
+          ]
+          and
+          [
+              T=int
+          ]
+F:\TheOtherSide\TheOtherSide\TheOtherSide\Sources\InputManager.cpp(34,92): warning C4244: 'argument': conversion from 'T' to 'T', possible loss of data
+          with
+          [
+              T=float
+          ]
+          and
+          [
+              T=int
+          ]
+F:\TheOtherSide\TheOtherSide\TheOtherSide\Sources\InputManager.cpp(34,84): warning C4244: 'argument': conversion from 'T' to 'T', possible loss of data
+          with
+          [
+              T=float
+          ]
+          and
+          [
+              T=int
+          ]
+F:\TheOtherSide\TheOtherSide\TheOtherSide\Sources\InputManager.cpp(34,66): warning C4244: 'argument': conversion from 'T' to 'T', possible loss of data
+          with
+          [
+              T=float
+          ]
+          and
+          [
+              T=int
+          ]
+F:\TheOtherSide\TheOtherSide\TheOtherSide\Sources\InputManager.cpp(34,41): warning C4244: 'argument': conversion from 'T' to 'T', possible loss of data
+          with
+          [
+              T=float
+          ]
+          and
+          [
+              T=int
+          ]
+F:\TheOtherSide\TheOtherSide\TheOtherSide\Sources\InputManager.cpp(46,88): warning C4244: 'argument': conversion from 'T' to 'T', possible loss of data
+          with
+          [
+              T=float
+          ]
+          and
+          [
+              T=int
+          ]
+F:\TheOtherSide\TheOtherSide\TheOtherSide\Sources\InputManager.cpp(46,80): warning C4244: 'argument': conversion from 'T' to 'T', possible loss of data
+          with
+          [
+              T=float
+          ]
+          and
+          [
+              T=int
+          ]
+F:\TheOtherSide\TheOtherSide\TheOtherSide\Sources\InputManager.cpp(46,62): warning C4244: 'argument': conversion from 'T' to 'T', possible loss of data
+          with
+          [
+              T=float
+          ]
+          and
+          [
+              T=int
+          ]
+F:\TheOtherSide\TheOtherSide\TheOtherSide\Sources\InputManager.cpp(46,37): warning C4244: 'argument': conversion from 'T' to 'T', possible loss of data
+          with
+          [
+              T=float
+          ]
+          and
+          [
+              T=int
+          ]
+  Kangaroo.cpp
+  Logs.cpp
+F:\TheOtherSide\TheOtherSide\TheOtherSide\Sources\Logs.cpp(12,39): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+F:\TheOtherSide\TheOtherSide\TheOtherSide\Sources\Logs.cpp(15,54): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+F:\TheOtherSide\TheOtherSide\TheOtherSide\Sources\Logs.cpp(21,39): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+F:\TheOtherSide\TheOtherSide\TheOtherSide\Sources\Logs.cpp(24,65): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+F:\TheOtherSide\TheOtherSide\TheOtherSide\Sources\Logs.cpp(63,28): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
+F:\TheOtherSide\TheOtherSide\TheOtherSide\Sources\Logs.cpp(84,28): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
+  MainMenuState.cpp
+  SplashState.cpp
+  StateMachine.cpp
+F:\TheOtherSide\TheOtherSide\TheOtherSide\Sources\StateMachine.cpp(22,26): warning C4834: discarding return value of function with 'nodiscard' attribute
+  Vehicle.cpp
+F:\TheOtherSide\TheOtherSide\TheOtherSide\Sources\Vehicle.cpp(12,35): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+F:\TheOtherSide\TheOtherSide\TheOtherSide\Sources\Vehicle.cpp(15,54): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+F:\TheOtherSide\TheOtherSide\TheOtherSide\Sources\Vehicle.cpp(21,35): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+F:\TheOtherSide\TheOtherSide\TheOtherSide\Sources\Vehicle.cpp(24,65): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+  main.cpp
+  Generating code
+  Previous IPDB not found, fall back to full compilation.
+  All 638 functions were compiled because no usable IPDB/IOBJ from previous compilation was found.
+  Finished generating code
+  TheOtherSide.vcxproj -> F:\TheOtherSide\TheOtherSide\Release\TheOtherSide.exe
